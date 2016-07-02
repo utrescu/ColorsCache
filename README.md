@@ -11,7 +11,7 @@ Es poden veure tots els colors que hi ha a la base de dades amb (els he tret de 
 
      $ curl localhost:8080/colors
 
-La petició als colors individuals s'ha "tunejat" perquè tardi 5 segons de manera que la primera petició a cada un dels colors tardarà una mica.
+La petició als colors individuals s'ha "tunejat" perquè tardi 5 segons. Al fer servir caché la primera petició a cada un dels colors tardarà una mica però les altres seran immediates.
 
 Programari
 -----------------
