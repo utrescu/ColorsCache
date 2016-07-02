@@ -1,0 +1,10 @@
+/target/
+/build/
+.gradle/
+*~
+.settings/*
+.project
+.classpath
+.mvn/
+mvnw
+mvnw.cmd
