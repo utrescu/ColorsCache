@@ -20,7 +20,7 @@ public interface ColorsService {
    * @param nom nom del color
    * @return retorna un objecte Color
    */
-  @Cacheable(value="repositori", key="#nom")
+  @Cacheable(value="repositori")
   Color getColor(String nom);
   
   /**
