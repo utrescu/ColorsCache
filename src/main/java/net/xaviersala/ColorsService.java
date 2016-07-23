@@ -7,22 +7,22 @@ import org.springframework.cache.annotation.Cacheable;
 import net.xaviersala.model.Color;
 
 /**
- * Obtenir els repositori de la font de dades. 
- * 
+ * Obtenir els repositori de la font de dades.
+ *
  * @author xavier
  *
  */
 public interface ColorsService {
-  
+
   /**
    * Obtenir el color a partir del seu nom.
-   * 
+   *
    * @param nom nom del color
    * @return retorna un objecte Color
    */
   @Cacheable(value="repositori")
-  Color getColor(String nom);
-  
+  Color getColor(String nom) throws IllegalArgumentException;
+
   /**
    * Obtenir la llista de repositori.
    * @return Llista amb els repositori

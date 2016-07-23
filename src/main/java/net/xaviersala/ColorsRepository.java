@@ -6,7 +6,7 @@ import net.xaviersala.model.Color;
 
 /**
  * Repositori de repositori basat en CRUD.
- * 
+ *
  * @author xavier
  *
  */
@@ -17,6 +17,6 @@ public interface ColorsRepository extends CrudRepository<Color, Long> {
    * @param nom nom del color
    * @return retorna un objecte Color
    */
-  Color findByNom(String nom);
+  Color findByNomIgnoreCase(String nom);
 
 }
